@@ -26,14 +26,14 @@ public class ClickController : MonoBehaviour
             _power = Input.mousePosition - _position;
             // Debug.Log(_power);
         }
-        if (_gameManager.GetState() == 0 && Input.GetMouseButtonDown(0))
+        if (_gameManager.GetState() == 0 && Input.GetMouseButtonDown(2))
         {
             // determine position
             Debug.Log(Input.mousePosition);
             _gameManager.FirstClick();
             _position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, _ballController.transform.position.z);
         }
-        else if (_gameManager.GetState() == 1 && Input.GetMouseButtonUp(0))
+        else if (_gameManager.GetState() == 1 && Input.GetMouseButtonUp(2))
         {
             // determine force
             Debug.Log("drag");
