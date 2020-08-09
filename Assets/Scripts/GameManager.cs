@@ -16,6 +16,11 @@ public class GameManager : MonoBehaviour
     {
         _state = 1;
     }
+    
+    public void SecondClick()
+    {
+        _state = 2;
+    }
 
     public void ResetState()
     {
